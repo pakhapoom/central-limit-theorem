@@ -27,7 +27,7 @@ def main():
         st.write("Choose the distribution parameters")
         if distribution == "Normal":
             params["loc"] = st.slider("Mean", min_value=-100, max_value=100, value=0)
-            params["scale"] = st.slider("Standard deviation", min_value=1, max_value=5, value=1)
+            params["scale"] = st.slider("Variance", min_value=1, max_value=5, value=1)
             sampler = rng.normal
 
         elif distribution == "Uniform":
